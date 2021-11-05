@@ -1,0 +1,38 @@
+<%- include('./layouts/preBody') -%>
+
+<div class="row">
+  <div class="col-4">&nbsp;</div>
+  <div class="col-4">
+    <% if (productos) { %>
+      <h1>Productos</h1>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Título</th>
+            <th scope="col">Precio</th>
+            <th scope="col">Imagen</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% productos.forEach(function(producto) { %>
+            <tr>
+              <td><%= producto.title %></td>
+              <td><%= producto.price %></td>
+              <td><img
+                  src="<%= producto.url %>"
+                  alt="Imagen Producto"
+                  class="img-thumbnail"
+                /></td>
+            </tr>
+          <% }); %> 
+        </tbody>
+      </table>
+    <%} else { %>
+      <h1>No hay productos</h1>
+    <% } %>
+  </div>
+
+  <div class="col-4">&nbsp;</div>
+</div>
+
+<%- include('./layouts/postBody') -%>
