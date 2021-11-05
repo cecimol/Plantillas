@@ -1,0 +1,26 @@
+extends ./layouts/main.pug
+
+block body
+  div(class="row")
+    div(class="col-4") &nbsp;
+    div(class="col-4")
+      if productos
+        h1 Productos
+        table(class="table table-striped")
+          thead
+            tr
+              th(scope="col") Título
+              th(scope="col") Precio
+              th(scope="col") Imagen
+          tbody
+            each producto in productos
+              tr
+                td #{producto.title}
+                td #{producto.price}
+                td
+                  img(src=producto.url
+                    alt="Imagen Producto"
+                    class="img-thumbnail")
+      else
+        h1 No hay productos
+    div(class="col-4") &nbsp;

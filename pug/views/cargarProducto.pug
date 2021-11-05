@@ -1,0 +1,31 @@
+extends ./layouts/main.pug
+
+block body
+  div(class="row")
+    div(class="col-4") &nbsp;
+    div(class="col-4")
+      h1 Carga de productos
+      form(method="post" action="/productos")
+        div(class="mb-3")
+          label(for="title" class="form-label") Título del Producto
+          input(type="text"
+            class="form-control"
+            id="title"
+            name="title"
+            placeholder="Escriba el título del producto")
+        div(class="mb-3")
+          label(for="price" class="form-label") Precio del Producto
+          input(type="text"
+            class="form-control"
+            id="price"
+            name="price"
+            placeholder="Escriba el precio del producto")
+        div(class="mb-3")
+          label(for="url" class="form-label") Imagen del Producto
+          input(type="text"
+            class="form-control"
+            id="url"
+            name="url"
+            placeholder="Escriba la url a la imagen del producto")
+        button(type="submit" class="btn btn-primary") Agregar Producto
+    div(class="col-4") &nbsp;
