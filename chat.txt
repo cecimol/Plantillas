@@ -1,0 +1,26 @@
+[
+  {
+    "email": "ceci_mol87@hotmail.com",
+    "mensaje": "Este es un nuevo mensaje"
+  },
+  {
+    "email": "marcelonallino@gmail.com",
+    "mensaje": "Esta es la respuesta"
+  },
+  {
+    "email": "test@test.com",
+    "mensaje": "test"
+  },
+  {
+    "email": "test@test.com",
+    "mensaje": "otro"
+  },
+  {
+    "email": "marcelonallino@gmail.com",
+    "mensaje": "que queres"
+  },
+  {
+    "email": "ceci_mol87@hotmail.com",
+    "mensaje": "Hola como andan ?"
+  }
+]
